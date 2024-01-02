@@ -2,44 +2,60 @@ import Circles from "../../components/Circles";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import Socials from "../../../sifu-portfolio/components/Socials";
 
 const Contact = () => {
   return (
     <div className="h-full bg-primary/30">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
         <div className="flex flex-col w-full max-w-[700px]">
-          <motion.h2
-            variants={fadeIn("up", 0.2)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="h2 text-center mb-12"
-          >
-            Let's <span className="text-accent">connect.</span>
-          </motion.h2>
+          <div className="flex flex-col justify-center items-center mb-10">
+            <motion.h2
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="h2 text-center mb-8"
+            >
+              Let's Work <span className="text-accent">Together.</span>
+            </motion.h2>
+            <motion.p
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className=" max-w-[700px] mx-auto lg:mx-0 text-center"
+            >
+              Thank you for taking the time to explore my video editing
+              portfolio. Whether you're a filmmaker, business owner, or content
+              creator, I look forward to the possibility of collaborating with
+              you to bring your ideas to life. Let's embark on a visual journey
+              together, where every frame tells a story and leaves a lasting
+              impression.
+            </motion.p>
+          </div>
 
-          <motion.form
+          <motion.div
             variants={fadeIn("up", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex-1 flex flex-col gap-6 w-full mx-auto"
+            className="flex-1 flex flex-col justify-center items-center gap-4 w-full mx-auto text-lg"
           >
-            <div className="flex gap-x-6 w-full">
-              <input type="text" placeholder="name" className="input" />
-              <input type="email" placeholder="email" className="input" />
-            </div>
-
-            <input type="text" placeholder="subject" className="input" />
-            <textarea placeholder="message" className="textarea"></textarea>
-
-            <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
-              <span className="group:hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
-                Let's talk
+            <p>
+              Email:{" "}
+              <span className="text-accent font-medium">
+                sifeddineelaabid@gmail.com
               </span>
-              <BsArrowRight className="-translate-y-[120%] opacity-0 group-hover:flex group-hover:-translate-y-0 group-hover:opacity-100 transition-all duration-300 absolute text-[22px]" />
-            </button>
-          </motion.form>
+            </p>
+            <p>
+              Phone Number:{" "}
+              <span className="text-accent font-medium">
+                +212 7 72 17 44 89
+              </span>
+            </p>
+            <Socials />
+          </motion.div>
         </div>
       </div>
     </div>

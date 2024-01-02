@@ -30,8 +30,11 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Tempor velit velit veniam velit qui ea.Officia ut cupidatat
-              laborum veniam officia quis enim tempor officia laborum cupidatat.
+              With a keen eye for detail and a commitment to excellence, I
+              specialize in weaving together moments that resonate with emotion
+              and creativity. Whether it's a riveting short film, a promotional
+              video, or a cinematic masterpiece, each project is a testament to
+              my love for the art of storytelling through moving images.
             </motion.p>
           </div>
 

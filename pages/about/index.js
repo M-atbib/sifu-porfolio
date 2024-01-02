@@ -4,92 +4,7 @@ import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaWordpress,
-  FaFigma,
-} from "react-icons/fa";
-import {
-  SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
-} from "react-icons/si";
-
-//  data
-const aboutData = [
-  {
-    title: "skills",
-    info: [
-      {
-        title: "Web Development",
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
-        ],
-      },
-      {
-        title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      },
-    ],
-  },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
-    ],
-  },
-  {
-    title: "experience",
-    info: [
-      {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
-    ],
-  },
-  {
-    title: "credentials",
-    info: [
-      {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
-      },
-    ],
-  },
-];
+import { aboutData } from "../../constants";
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -115,7 +30,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
+            className="h2 text-6xl"
           >
             Captivating <span className="text-accent">stories</span> birth
             magnificient designs.
@@ -127,9 +42,13 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began freelancing as a developer. Since then, I've
-            done remote work for agencies, consulted for startups, and
-            collaborated on digital products for business and consumer use.
+            Highly skilled and motivated Video Editor and Graphic Designer with
+            a proven track record of producing engaging multimedia content.
+            Adept at translating ideas into visually stunning designs and
+            compelling videos. Proficient in utilizing industrystandard software
+            and technologies to deliver high-quality projects within tight
+            deadlines. Strong conceptual thinker with excellent attention to
+            detail and a passion for storytelling through visual media.
           </motion.p>
 
           <motion.div
@@ -142,7 +61,7 @@ const About = () => {
             <div className="flex flex-1 xl:gap-x-6">
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent">
-                  <CountUp start={0} end={10} duration={5} /> +
+                  <CountUp start={0} end={2} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of experience
@@ -151,30 +70,30 @@ const About = () => {
 
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent">
-                  <CountUp start={0} end={250} duration={5} /> +
+                  <CountUp start={0} end={5} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied Clients
                 </div>
               </div>
 
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent">
-                  <CountUp start={0} end={650} duration={5} /> +
+                  <CountUp start={0} end={20} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished Projects
                 </div>
               </div>
 
-              <div className="relative flex-1">
+              {/* <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent">
                   <CountUp start={0} end={8} duration={5} /> +
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Wining Awards
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         </div>

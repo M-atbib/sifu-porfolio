@@ -30,8 +30,11 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Tempor velit velit veniam velit qui ea.Officia ut cupidatat
-              laborum veniam officia quis enim tempor officia laborum cupidatat.
+              My journey in video editing is marked by a fusion of technical
+              expertise and artistic intuition. Armed with cutting-edge editing
+              tools and a deep understanding of narrative structure, I strive to
+              create seamless, compelling visuals that leave a lasting impact on
+              the audience.
             </motion.p>
           </div>
 
