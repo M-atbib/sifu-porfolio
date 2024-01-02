@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import CountUp from "react-countup";
-import Avatar from "../../components/Avatar";
-import Circles from "../../components/Circles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import { aboutData } from "../../constants";
+
+import { Circles, Avatar } from "../../components";
 
 const About = () => {
   const [index, setIndex] = useState(0);

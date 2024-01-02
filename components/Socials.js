@@ -3,9 +3,6 @@ import {
   RiYoutubeLine,
   RiInstagramLine,
   RiFacebookLine,
-  RiDribbbleLine,
-  RiBehanceLine,
-  RiPinterestLine,
   RiDiscordFill,
 } from "react-icons/ri";
 

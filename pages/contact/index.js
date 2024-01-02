@@ -2,7 +2,8 @@ import Circles from "../../components/Circles";
 import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-import Socials from "../../../sifu-portfolio/components/Socials";
+import { Socials } from "../../components";
+
 
 const Contact = () => {
   return (
