@@ -16,13 +16,13 @@ const Socials = () => {
       >
         <RiYoutubeLine />
       </Link>
-      <Link
+      {/* <Link
         href={"https://www.instagram.com/sifu__u/"}
         target="_blank"
         className="hover:text-accent transition-all duration-300"
       >
         <RiInstagramLine />
-      </Link>
+      </Link> */}
       <Link
         href={"https://www.facebook.com/sifo.abid.12"}
         target="_blank"

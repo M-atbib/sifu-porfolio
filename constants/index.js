@@ -83,8 +83,8 @@ export const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb1.png",
-          url: "https://www.instagram.com/slice_pizza_kenitra/?hl=fr",
+          path: "/thumb1.jpeg",
+          url: "https://www.youtube.com/@IRAMO1/videos",
         },
         {
           title: "title",
